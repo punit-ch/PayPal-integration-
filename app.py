@@ -104,7 +104,8 @@ def capture_paypal_order(order_id):
         order_info["captured"] = True
 
     try:
-        result = capture_order(order_id)
+        request_id = secrets.token_urlsafe(16)
+        result = capture_order(order_id, request_id)
 
         status = result.get("status", "UNKNOWN")
         if status != "COMPLETED":

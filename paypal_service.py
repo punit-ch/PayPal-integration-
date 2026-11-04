@@ -74,7 +74,7 @@ def create_order():
                 "reference_id": "demo-product",
                 "description": "PayPal Sandbox Demo Product",
                 "amount": {
-                    "currency_code": CURRENCY,
+                    "currency_code": "USD"    ,
                     "value": "5.00",
                 },
             }
