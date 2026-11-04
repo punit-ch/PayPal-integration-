@@ -1,0 +1,44 @@
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #f3f5f8;
+  color: #172033;
+  font-family: Arial, sans-serif;
+}
+
+.checkout {
+  box-sizing: border-box;
+  width: min(92%, 440px);
+  padding: 32px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 8px 32px rgba(20, 30, 50, 0.08);
+}
+
+h1 {
+  font-size: 26px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.notice {
+  color: #5a6578;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#paypal-button-container {
+  margin-top: 24px;
+}
+
+#status {
+  min-height: 24px;
+  margin-top: 20px;
+  overflow-wrap: anywhere;
+}

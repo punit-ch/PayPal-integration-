@@ -1,0 +1,26 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PayPal Sandbox Checkout</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <main class="checkout">
+    <h1>PayPal Sandbox Demo</h1>
+    <p>Demo product</p>
+    <p class="price">USD 5.00</p>
+    <p class="notice">Test transaction only. No real money is charged.</p>
+
+    <div id="paypal-button-container"></div>
+    <p id="status" role="status" aria-live="polite"></p>
+  </main>
+
+  <script
+    src="https://www.paypal.com/sdk/js?client-id={{ config_client_id }}&currency=USD&intent=capture">
+  </script>
+  <script src="/static/js/checkout.js"></script>
+</body>
+</html>
